@@ -11,7 +11,7 @@ module RuboCop
       # boolean operators: `&&`, `||`
       # and "spaceship" operator - `<=>`.
       #
-      class BinaryOperation < Cop
+      class BinaryOperation < Base
         MSG = 'This comparison operator logic is not allowed here.'
 
         COMPARISON_OPERATORS = %i[== === != eql? equal? =~ !~ < > <=> <= >=].freeze

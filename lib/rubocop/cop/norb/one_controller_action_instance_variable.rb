@@ -33,7 +33,7 @@ module RuboCop
       #     end
       #   end
       #
-      class OneControllerActionInstanceVariable < Cop
+      class OneControllerActionInstanceVariable < Base
         include DefNode
         MSG = '`%<action>s` instantiates more than one @instance variable.'
 

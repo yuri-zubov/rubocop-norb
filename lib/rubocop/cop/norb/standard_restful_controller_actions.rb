@@ -29,7 +29,7 @@ module RuboCop
       #     end
       #   end
       #
-      class StandardRestfulControllerActions < Cop
+      class StandardRestfulControllerActions < Base
         include DefNode
 
         MSG = '`%<action>s` is not a standard RESTful controller action.'

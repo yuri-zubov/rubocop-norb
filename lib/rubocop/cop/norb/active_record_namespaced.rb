@@ -40,7 +40,7 @@ module RuboCop
       #     end
       #   end
       #
-      class ActiveRecordNamespaced < Cop
+      class ActiveRecordNamespaced < Base
         CONFIGS = {
           namespace: OpenStruct.new(key: 'ActiveRecordNamespace', default: :Ar),
           superclasses: OpenStruct.new(

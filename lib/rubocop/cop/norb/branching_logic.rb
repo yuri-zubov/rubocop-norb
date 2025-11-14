@@ -201,7 +201,7 @@ module RuboCop
       #       </ul>
       #     </menu>
       #   ERB
-      class BranchingLogic < Cop
+      class BranchingLogic < Base
         MSG = 'This branching logic is not allowed here.'
 
         def on_if(node)

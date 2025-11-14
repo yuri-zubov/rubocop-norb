@@ -15,7 +15,7 @@ module RuboCop
       #   # good
       #   # app/models/blog/comments.rb
       #
-      class MisplacedLogic < Cop
+      class MisplacedLogic < Base
         include RangeHelp
         MSG = 'Code should only be placed in %<exclude>s.'
 
