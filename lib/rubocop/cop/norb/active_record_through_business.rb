@@ -33,7 +33,7 @@ module RuboCop
       #     end
       #   end
       #
-      class ActiveRecordThroughBusiness < Cop
+      class ActiveRecordThroughBusiness < Base
         MSG = 'Direct ActiveRecord calls should come from business objects.'
 
         def_node_matcher :const_name, <<-PATTERN
